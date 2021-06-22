@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Benne', serif;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background-image:url('.//images/bg.jpg');
+            background-size: 100% 100%;
+        }
+        .menubar{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .menubar a{
+            margin-right: 23px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #00c4cc;
+        }
+        .main{
+            width: 100%;
+           
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .right-sec{
+padding-left: 30px;
+        }
+        .right-sec p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .right-sec h2{
+           font-size: 35px;
+        }
+        .left-sec img{
+            height: 350px;
+            margin-right: 80px;
+        }
+      .right-sec  button{
+            padding: 10px 45px;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            border: none;
+            /* background-image: linear-gradient(to right,rgb(13, 13, 241,blue));? */
+            background-color: #00c4cc;
+           
+
+        }
+        
+        .videos{
+            width: 100%;
+            height: 100vh;
+            background-image:url('./images/bg2.png');
+            background-size: 100% 100%;
+        }
+      .section2{
+          width: 60%;
+          margin: 0px auto;
+          position: relative;
+          column-count: 2;
+          padding: 20px;
+      }
+      .image{
+          display: inline-block;
+          margin-bottom: 10px;
+          overflow: hidden;
+
+      }
+      .image img{
+       width: 100%;
+       transition: 0.25s ease-in-out;
+      }
+     
+      .cot{
+        width: 100%;
+            height: 100vh;
+            background-image:url('./images/bg2.png');
+            background-size: 100% 100%;
+      
+  }
+  .fot{
+      margin-top: 80px;
+    height: 40px;
+    
+    
+  }
+  
+ 
+  
+  .container{
+	display: flex;
+	justify-content: center	;
+	flex-wrap: wrap;
+}
+
+.cards{
+	width: 300px; height: 400px;
+	margin: 15px;
+	cursor: pointer;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+	position: relative;
+	overflow: hidden;
+}
+
+.cards img{
+	width: 100%; height: 100%;
+	object-fit: cover;
+	transition: all 0.3s;
+}
+
+.details{
+	position: absolute;
+	bottom: 0; left: 0;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 20px 10px;
+	transform: translateY(100%);
+	transition: all 0.3s;
+}
+
+.details h2{
+	text-transform: uppercase;
+	/* font-family: 'Raleway', sans-serif; */
+	font-size: 18px;
+	color: #565656;
+	letter-spacing: 1px;
+}
+
+.details a{
+	display: inline-block;
+	margin-left: 20px;
+	color: #565656;
+	transform: translateY(50px);
+	transition: all 0.3s;
+}
+
+.details a:first-child{
+	transition-delay: 0.1s;
+}
+
+.details a:nth-child(2){
+	transition-delay: 0.2s;
+}
+
+.details a:last-child{
+	transition-delay: 0.3s;
+}
+
+.cards:hover img{
+	transform: scale(1.2);
+}
+
+.cards:hover .details, .card:hover .details a{
+	transform: none;
+}
+
+@media (max-width:360px){
+
+	.card{
+		width: auto;
+		flex-basis: 100%;
+	}
+
+	.details h2, .details a{
+		font-size: 14px;
+	}
+
+}
+    </style>
+       
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+    <header>
+    <div class="menubar">
+        <div style="font-size: 28px;color:hsl(240, 84%, 54%)134, 134, 145); margin-right:100px;">
+           <!-- <img src="images/logo"/> -->
+           CoolBuddy Yt
+        </div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">ourVideos</a>
+
+            <a href="">About</a>
+            <a href="">Contact</a>
+
+        </nav>
+    </div>
+  <div class="main">
+      <section class="left-sec">
+<figure>
+    <img src="./images/mainbar.svg" />
+</figure>
+      </section>
+      <section class="right-sec">
+        <h2>Learn with CoolbuddyYt</h2>
+        <p>We are here for u 24/7.Any help just email us.</p>
+        <button>Email</button>
+
+      </section>
+
+    </div>
+    </header>
+    <div class="videos">
+<h2 style="text-align: center; font-size: 30px;margin-top: 10px;">Our Video</h2>
+<div class="section2">
+<div class="image">
+    <img src="./images/1.png" />
+
+</div>
+<div class="image">
+    <img src="./images/2.png" />
+
+</div><div class="image">
+    <img src="./images/3.png" />
+
+</div>
+<div class="image">
+    <img src="./images/4.png" />
+
+</div>
+
+    </div>
+
+
+    </div>
+   
+    <div class="videos" style="background-color: #eee;">
+        <h2 style="text-align: center; font-size: 30px;margin-top: 10px;">About</h2>
+        <div>
+
+   <div class="container">
+		<div class="cards">
+			<img src="./images/6.jpg" alt="">
+			<div class="details">
+                <div>
+                <h2>Anbuselvam R</h2>
+                </div>
+                
+                <div class="social-media-list" style="padding-bottom:30px ; margin-bottom: 70px; margin-right: 30px;
+              ">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+                
+			</div>
+		</div>
+		<div class="cards">
+			<img src="./images/jl.jpg" alt="">
+			<div class="details">
+				<h2>Janesh M</h2>
+				<div class="social-media-list" style=" margin-bottom: 110px; margin-right: 30px;
+              ">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+    <!-- footer-->
+<div class="fot">
+    
+    <p style="text-align:center;padding: 10px; ">All Copyrights Reserved&#169 2021||Created by Anbutech</p>
+    </div>
+    
+</div>
+</div>
+</body>
+</html>
